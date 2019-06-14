@@ -1,0 +1,13 @@
+.search-container{
+    text-align: center;
+    padding: 25px 0%;
+    background: #EDD892;
+}
+
+.search-input{
+    width: 99%;
+}
+
+.search-button{
+    width: 100%;
+}
