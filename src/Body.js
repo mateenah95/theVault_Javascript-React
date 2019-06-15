@@ -1,21 +1,21 @@
 import React from 'react';
+import Item from './Item'
 
 import './Body.css'
 
 class Body extends React.Component{
     render(){
-        return(
-            <div className='body-container'>
-                <h2>Body</h2>
-                <p>{this.props.certs ? 'Green' : 'Red'}</p>
-                {this.props.certs.map((cert)=>(
-                    <div>
-                        <h2>ID: {cert.id}</h2>
-                        <h3>Name: {cert.name}</h3>
-                    </div>
-                ))}
-            </div>
-        )
+        if(this.props.certs.length === 0){
+            return <div className='body-container'><h1>No Matching Certificates</h1></div>
+        }
+        else{
+            return (
+                <div className='body-container'>
+                    <h1>Users</h1>
+                    {this.props.certs.map((cert)=><Item cert={cert} />)}
+                </div>
+            )
+        }
     }
 }
 

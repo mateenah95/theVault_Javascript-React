@@ -6,8 +6,9 @@ class Search extends React.Component{
     render(){
         return(
             <div className='search-container'>
-                <input type='text' className='search-input'></input>
-                <input type='submit' className='search-button'></input>
+                <h2>Filter By:</h2>
+                <input type='text' placeholder='Search Here...' autoFocus onChange={this.props.updateKey} className='search-input'></input>
+                <button className='search-button' onClick={this.props.updateOutput}>Search</button>
             </div>
         )
     }

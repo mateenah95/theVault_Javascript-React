@@ -1,5 +1,7 @@
 .header-container{
     text-align: center;
-    padding: 25px 0%;
-    background-color: #AABA9E;
+    padding: 5px 0%;
+    background-color: #68C5DB;
+    border: 5px solid purple;
+    color: #D7263D;
 }
