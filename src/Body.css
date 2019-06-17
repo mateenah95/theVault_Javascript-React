@@ -1,13 +1,14 @@
 .body-container{
-    background: #68C5DB;
-    padding: 10px 0%;
+    padding: 10px 5px;
     text-align: center;
-    height: 365px;
+    height: auto;
     overflow: auto;
-    border: 5px solid purple;
+    border: 2px solid #D7263D;
     border-bottom: 0px;
+    height: 350px;
 }
 
 h1{
     color: #D7263D;
 }
+

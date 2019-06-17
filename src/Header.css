@@ -1,7 +1,6 @@
 .header-container{
     text-align: center;
-    padding: 5px 0%;
-    background-color: #68C5DB;
-    border: 5px solid purple;
+    border: 2px solid #D7263D;
     color: #D7263D;
+    padding: 5px 0%;
 }

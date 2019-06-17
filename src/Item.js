@@ -13,11 +13,17 @@ class Item extends React.Component{
 
     render(){
         return(
-            <div className='item_container'>
-                <h2>ID#: {this.props.cert.id}</h2>
-                <h2>Name: {this.props.cert.name}</h2>
-                <h3>Email: {this.props.cert.email}</h3>
-                <button className='open_button' onClick={this.alertClick}>Open</button>
+            <div class="card item_container">
+                <div class="card-header bg-dark">
+                    <h2>Name: {this.props.cert.name}</h2>
+                </div>
+                <div class="card-body">
+                    <h5><em>Email: {this.props.cert.email}</em></h5>
+                    <button className='open_button btn btn-dark' onClick={this.alertClick}>Open</button>
+                </div>
+                <div class="card-footer text-muted bg-dark">
+                    <span className="remover">Remove</span>
+                </div>
             </div>
         )
     }

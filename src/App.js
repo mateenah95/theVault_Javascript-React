@@ -68,11 +68,11 @@ class App extends React.Component{
 
   render(){
     return(
-      <div className='app-container'>
-        <Header text={'First React Application'} />
+      <div className='app-container card'>
+        <Header text={'The Vault'} />
         <Search updateKey={this.updateKey} updateOutput={this.updateOutput}/>
         <Body certs={this.state.certificatesToShow}/>
-        <Header text={'Mateen Ahmed Sheikh'} />
+        <Header />
       </div>
     )
   }
